@@ -24,7 +24,9 @@ while True:
         if len(numbers) == 0:
             print("No numbers added yet!")
         else:
-            print("Numbers Entered:", numbers)
+            print("Numbers Entered with indices:")
+            for i, num in enumerate(numbers):
+                print(f"{i}: {num}")
 
     elif choice == "3":
         if len(numbers) == 0:
