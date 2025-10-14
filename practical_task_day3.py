@@ -67,4 +67,4 @@ while True:
             break
 
     else:
-        print("Enter a valid choice between 1-6")
+        print("Enter a valid choice between 1-7")
