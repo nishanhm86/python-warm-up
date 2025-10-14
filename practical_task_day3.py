@@ -37,7 +37,7 @@ while True:
             print("No numbers added yet!")
         else:
             average = sum(numbers) / len(numbers)
-            print(f"Average:, {average:.2f}")
+            print(f"Average: {average:.2f}")
     elif choice == "5":
         if len(numbers) == 0:
             print("No numbers added yet!")
