@@ -13,39 +13,37 @@ while True:
 
     choice = input("Enter your choice(1-6): ")
     if choice == "1":
-        n = int(input("Enter the size of numbers: : "))
+        n = int(input("Enter how many numbers to add: "))
         for i in range(n):
             num = int(input(f"Enter a number {i + 1} : "))
             numbers.append(num)
-        print("Numbers Added Successfully")
+        print("Numbers Added Successfully!")
 
     elif choice == "2":
         if len(numbers) == 0:
-            print("No numbers added")
+            print("No numbers added yet!")
         else:
             print("Numbers Entered:", numbers)
 
     elif choice == "3":
         if len(numbers) == 0:
-            print("No numbers added")
+            print("No numbers added yet!")
         else:
             total = sum(numbers)
             print("Total:", total)
 
     elif choice == "4":
         if len(numbers) == 0:
-            print("No numbers added")
+            print("No numbers added yet!")
         else:
             average = sum(numbers) / len(numbers)
-            print("Average:", average)
+            print(f"Average:, {average:.2f}")
     elif choice == "5":
         if len(numbers) == 0:
-            print("No numbers added")
+            print("No numbers added yet!")
         else:
-            maximum = max(numbers)
-            print("Maximum:", maximum)
-            minimum = min(numbers)
-            print("Minimum:", minimum)
+            print("Maximum:", max(numbers))
+            print("Minimum:", min(numbers))
 
     elif choice == "6":
             print("Goodbye. Leaving the program.")
