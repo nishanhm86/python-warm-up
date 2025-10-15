@@ -134,13 +134,22 @@ while True:
         if len(numbers) == 0:
             print("No numbers to be search!")
         else:
-            target = int(input("Enter the Number to Search: "))
-            indices = [i for i, num in enumerate(numbers) if num == target]
-            if indices:
-                print(f"Number Found at index/indices: {indices}!")
-            else:
-                print("No number found at index/indices!")
+            print("Numbers entered with indices")
+            for i, num in enumerate(numbers):
+                print(f"{i}: {num}")
             print("-" * 30)
+            try:
+                target = int(input("Enter the Number to Search: "))
+                indices = [i for i, num in enumerate(numbers) if num == target]
+                if indices:
+                    print(f"Number {target} Found at index/indices: {indices}!")
+                else:
+                    print(f"Number {target} not found in the list.")
+            except ValueError:
+                print("Enter a valid Index!")
+            print("-" * 30)
+
+
 
     elif choice == "11":
         if len(numbers) == 0:
